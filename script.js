@@ -2,6 +2,33 @@ document.addEventListener('DOMContentLoaded', () => {
     initSoftware();
 });
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    
+    const icon = hamburger.querySelector("i");
+    if (navMenu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+});
+
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        const icon = hamburger.querySelector("i");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    });
+});
+
 /*PŘEPÍNÁNÍ KATEGORIÍ*/
 function zmenKategorii(kategorie) {
     document.querySelectorAll('.grid-kontejner').forEach(grid => grid.classList.remove('zobrazit'));

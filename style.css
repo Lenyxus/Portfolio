@@ -43,7 +43,11 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* TOTO JE KLÍČOVÉ - ořízne vše, co leze ven */
+    width: 100%;
+ }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -106,6 +110,63 @@ nav a:hover, nav a.active { color: var(--barva-akcent); }
 }
 .tlacitko-menu:hover { transform: translateY(-2px); }
 [data-theme="light"] .tlacitko-menu { color: #000; }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background-color: var(--barva-akcent); 
+    border-radius: 50%; 
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    z-index: 1001; 
+    margin-left: auto;
+}
+
+[data-theme="light"] .hamburger {
+    color: #000; 
+}
+
+@media screen and (max-width: 768px) {
+    
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a; 
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0;
+        
+        transform: translateY(-150%); 
+        transition: transform 0.4s ease;
+        z-index: 999;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    }
+    
+    [data-theme="light"] nav ul {
+        background-color: #ffffff;
+    }
+
+    nav ul.active {
+        transform: translateY(0);
+    }
+    
+    .hamburger.active {
+        transform: rotate(90deg);
+    }
+}
+
 
 .obal-stranky { max-width: 1600px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; min-height: 80vh; }
 
