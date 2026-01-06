@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Veronika Sedlářová</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flek flek-1"></div>
+    <div class="flek flek-2"></div>
+    <div class="flek flek-3"></div>
+    <div class="flek flek-spodni"></div>
+
+    <header>
+        <div class="vnitrek-hlavicky">
+            <div class="logo-obal"><i class="fa-solid fa-star"></i> VERUNX</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-preklad="nav_domu">Home</a></li>
+                    <li><a href="about.html" class="active" data-preklad="nav_o_mne">About me</a></li>
+                    <li><a href="projects.html" data-preklad="nav_projekty">Projects</a></li>
+                    <li><a href="contact.html" class="tlacitko-menu" data-preklad="nav_kontakt">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="ovladani">
+        <button class="cudlik-ovladani" id="tlacitko-jazyk">CZ</button>
+        <button class="cudlik-ovladani" id="tlacitko-tema"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <div class="obal-stranky">
+        <section class="sekce-dlazdice" style="padding-top: 40px;">
+            <div class="flek-stred"></div>
+            
+            <div class="bio-karta">
+                <h2 class="bio-nadpis" data-preklad="bio_nadpis">Who am I?</h2>
+                <p class="bio-text" data-preklad="bio_text">
+                    I am a passionate creator who sees the world through the lens of design and logic. My journey began with drawing and evolved into complex digital art and programming. I believe that the best solutions come from the intersection of functionality and aesthetics.
+                </p>
+            </div>
+
+            <div class="mrizka-boxu">
+                <div class="box-karta karta-ruzova">
+                    <h3 class="nadpis-sekce" data-preklad="sekce_vzdelani">Education</h3>
+                    <div class="casova-osa-polozka">
+                        <div class="rok" data-preklad="datum_vs">2025 - Present</div>
+                        <div class="role">Computer Science</div>
+                        <div class="skola" data-preklad="skola_vs">VŠB - Technical University of Ostrava</div>
+                    </div>
+                    <div class="casova-osa-polozka">
+                        <div class="rok">2017 - 2025</div>
+                        <div class="role" data-preklad="role_stredni">Student</div>
+                        <div class="skola" data-preklad="skola_gymnazium">Grammar School</div>
+                    </div>
+                    <div class="tagy-obal">
+                        <span class="tag" data-preklad="tag_logika">#Logic</span>
+                        <span class="tag" data-preklad="tag_matematika">#Mathematics</span>
+                        <span class="tag" data-preklad="tag_analyza">#Analysis</span>
+                    </div>
+                </div>
+                <div class="box-karta karta-akcent">
+                    <h3 class="nadpis-sekce" data-preklad="sekce_zkusenosti">Experience</h3>
+                    <div class="casova-osa-polozka">
+                        <div class="rok" data-preklad="datum_grafika">2014 - Present</div>
+                        <div class="role" data-preklad="role_grafika">Graphic Design & Illustration</div>
+                        <div class="skola" data-preklad="popis_grafika">Personal Projects</div>
+                    </div>
+                    <div class="casova-osa-polozka">
+                        <div class="rok" data-preklad="datum_web">2023 - Present</div>
+                        <div class="role" data-preklad="role_web">Web Development</div>
+                        <div class="skola" data-preklad="popis_web">Creating websites</div>
+                    </div>
+                    <div class="tagy-obal">
+                        <span class="tag" data-preklad="tag_kreativita">#Creativity</span>
+                        <span class="tag" data-preklad="tag_komunikace">#Communication</span>
+                        <span class="tag">#Adaptability</span>
+                    </div>
+                </div>
+                <div class="box-karta karta-ruzova">
+                    <h3 class="nadpis-sekce" data-preklad="sekce_dovednosti">Technical Skills</h3>
+                    <div class="sw-grid">
+                        <div class="ikona-sw">HTML</div><div class="ikona-sw">CSS</div><div class="ikona-sw">C</div>
+                        <div class="ikona-sw">Canva</div><div class="ikona-sw">SAI</div><div class="ikona-sw">Office 365</div>
+                        <div class="ikona-sw">Figma</div>
+                    </div>
+                    <h3 class="nadpis-sekce" style="margin-top:auto;" data-preklad="sekce_jazyk">Language</h3>
+                    <div style="display:flex; gap: 40px; font-size:0.9rem;">
+                        <div><strong data-preklad="jaz_cz">Czech</strong><br><span style="opacity:0.7">Native</span></div>
+                        <div><strong data-preklad="jaz_en">English</strong><br><span style="opacity:0.7">Fluent</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sw-carousel-container">
+                <button class="sw-btn" onclick="rotujSoftware(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="sw-track" id="software-track"></div>
+                <button class="sw-btn" onclick="rotujSoftware(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="sw-popis-text" data-preklad="skill_text">
+                With programs like SAI2, Canva, and Office 365, I work at an advanced level. I am currently actively learning tools like Blender, Onshape, and Figma.
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

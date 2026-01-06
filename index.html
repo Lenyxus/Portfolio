@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronika Sedlářová | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="flek flek-1"></div>
+    <div class="flek flek-2"></div>
+    <div class="flek flek-3"></div>
+    <div class="flek flek-spodni"></div>
+
+    <header>
+        <div class="vnitrek-hlavicky">
+            <div class="logo-obal"><i class="fa-solid fa-star"></i> VERUNX</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active" data-preklad="nav_domu">Home</a></li>
+                    <li><a href="about.html" data-preklad="nav_o_mne">About me</a></li>
+                    <li><a href="projects.html" data-preklad="nav_projekty">Projects</a></li>
+                    <li><a href="contact.html" class="tlacitko-menu" data-preklad="nav_kontakt">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="ovladani">
+        <button class="cudlik-ovladani" id="tlacitko-jazyk">CZ</button>
+        <button class="cudlik-ovladani" id="tlacitko-tema"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <div class="obal-stranky">
+        <section class="uvod">
+            <div class="uvod-text">
+                <h1 data-preklad="uvod_nadpis">Hello,<br>I'm Veronika !</h1>
+                <h5 class="fialovy-text" data-preklad="uvod_role">Graphic Designer • Coder</h5>
+                <p data-preklad="uvod_popis">I combine creativity with code. Self-taught graphic designer and computer science student at <br>VŠB – Technical University of Ostrava.</br></p>
+                <a href="https://www.linkedin.com/in/veronika-sedl%C3%A1%C5%99ov%C3%A1-78416b386/" target="_blank" class="uvod-tlacitko" data-preklad="tlacitko_linkedin">
+                    <i class="fa-brands fa-linkedin"></i> My LinkedIn
+                </a>
+            </div>
+            <div class="obal-profilovky">
+                <div class="profilova-karta">
+                    <div class="kruh-za-kartou"></div>
+                    <img src="img/portfolio1.jpg" alt="Veronika" class="fotka-profil">
+                    <div class="stitek stitek-levy" data-preklad="stitek_datum">Studentka CS</div>
+                    <div class="stitek stitek-pravy" data-preklad="stitek_lokace">1. Ročník</div>
+                    <div class="kontakt-box">
+                        <h3 data-preklad="kontakt_nadpis">Contact</h3>
+                        <ul class="seznam-kontakt">
+                            <li><i class="fa-solid fa-location-dot"></i> Ostrava, ČR</li>
+                            <li><i class="fa-solid fa-envelope"></i> vvsedlarova@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sekce-kostka">
+            <div class="flek-stred"></div>
+            <div class="mrizka-boxu">
+                <div class="text-na-pozadi">PORTFOLIO</div>
+                <div class="box-karta karta-ruzova">
+                    <h3 class="nadpis-sekce" data-preklad="sekce_vzdelani">Education</h3>
+                    <div class="casova-osa-polozka">
+                        <div class="rok" data-preklad="datum_vs">2025 - Present</div>
+                        <div class="role">Computer Science</div>
+                        <div class="skola" data-preklad="skola_vs">VŠB - Technical University of Ostrava</div>
+                    </div>
+                    <div class="casova-osa-polozka">
+                        <div class="rok">2017 - 2025</div>
+                        <div class="role" data-preklad="role_stredni">Student</div>
+                        <div class="skola" data-preklad="skola_gymnazium">Grammar School</div>
+                    </div>
+                    <div class="tagy-obal">
+                        <span class="tag" data-preklad="tag_logika">#Logic</span>
+                        <span class="tag" data-preklad="tag_matematika">#Mathematics</span>
+                        <span class="tag" data-preklad="tag_analyza">#Analysis</span>
+                    </div>
+                </div>
+                <div class="box-karta karta-akcent">
+                    <h3 class="nadpis-sekce" data-preklad="sekce_zkusenosti">Experience</h3>
+                    <div class="casova-osa-polozka">
+                        <div class="rok" data-preklad="datum_grafika">2014 - Present</div>
+                        <div class="role" data-preklad="role_grafika">Graphic Design & Illustration</div>
+                        <div class="skola" data-preklad="popis_grafika">Personal Projects</div>
+                    </div>
+                    <div class="casova-osa-polozka">
+                        <div class="rok" data-preklad="datum_web">2023 - Present</div>
+                        <div class="role" data-preklad="role_web">Web Development</div>
+                        <div class="skola" data-preklad="popis_web">Creating websites</div>
+                    </div>
+                    <div class="tagy-obal">
+                        <span class="tag" data-preklad="tag_kreativita">#Creativity</span>
+                        <span class="tag" data-preklad="tag_komunikace">#Communication</span>
+                        <span class="tag">#Adaptability</span>
+                    </div>
+                </div>
+                <div class="box-karta karta-ruzova">
+                    <h3 class="nadpis-sekce" data-preklad="sekce_dovednosti">Technical Skills</h3>
+                    <div class="sw-grid">
+                        <div class="ikona-sw">HTML</div><div class="ikona-sw">CSS</div><div class="ikona-sw">C</div>
+                        <div class="ikona-sw">Canva</div><div class="ikona-sw">SAI</div><div class="ikona-sw">Office 365</div>
+                        <div class="ikona-sw">Figma</div>
+                    </div>
+                    <h3 class="nadpis-sekce" style="margin-top:auto;" data-preklad="sekce_jazyk">Language</h3>
+                    <div style="display:flex; gap: 40px; font-size:0.9rem;">
+                        <div><strong data-preklad="jaz_cz">Czech</strong><br><span style="opacity:0.7">Native</span></div>
+                        <div><strong data-preklad="jaz_en">English</strong><br><span style="opacity:0.7">Fluent</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="layout-dva-sloupce">
+            <div class="sidebar-seznam">
+                <h2 class="sidebar-nadpis" data-preklad="prace_nadpis">My Work</h2>
+                <ul class="projekt-link-seznam">
+                    <li onclick="zmenKategorii('digital')" class="aktivni-kategorie" id="link-digital" data-preklad="kat_digital">Digital Art</li>
+                    <li onclick="zmenKategorii('3d')" id="link-3d" data-preklad="kat_3d">3D Models</li>
+                    <li onclick="zmenKategorii('uiux')" id="link-uiux" data-preklad="kat_uiux">UI/UX Design</li>
+                    <li onclick="zmenKategorii('school')" id="link-school" data-preklad="kat_skola">My School Projects</li>
+                </ul>
+                <div style="margin-top: 40px; font-size: 0.9rem; opacity: 0.6;">
+                    <p data-preklad="prace_podnadpis">Selected projects.</p>
+                </div>
+            </div>
+
+            <div id="grid-digital" class="grid-kontejner grid-digital-layout zobrazit">
+                <div class="masonry-item siroky"><img src="img/illus9.png" class="masonry-img"><div class="prekryv-textu"><h3>My Digital Art</h3></div></div>
+                <div class="masonry-item vysoky"><img src="img/illus4.png" class="masonry-img"><div class="prekryv-textu"><h3>Design</h3></div></div>
+                <div class="masonry-item siroky"><div class="carousel-wrapper"><img src="img/illus3.png" class="carousel-img"><img src="img/illus12.png" class="carousel-img"><img src="img/illus14.png" class="carousel-img"></div><div class="prekryv-textu"><h3>Character Art</h3></div></div>
+                <div class="masonry-item vysoky"><div class="carousel-wrapper"><img src="img/illus2.png" class="carousel-img"><img src="img/illus7.png" class="carousel-img"><img src="img/illus1.png" class="carousel-img"></div><div class="prekryv-textu"><h3>Concept Art</h3></div></div>
+                <div class="masonry-item"><img src="img/illus5.png" class="masonry-img"><div class="prekryv-textu"><h3>Illustration</h3></div></div>
+                <div class="masonry-item velky-ctverec"><div class="carousel-wrapper two-items"><img src="img/fight.gif" class="carousel-img"><img src="img/all-night.gif" class="carousel-img"></div><div class="prekryv-textu"><h3>Animations</h3></div></div>
+                <div class="masonry-item"><img src="img/illus8.png" class="masonry-img"><div class="prekryv-textu"><h3>Branding</h3></div></div>
+            </div>
+
+            <div id="grid-3d" class="grid-kontejner grid-3d-layout">
+                <div class="video-karta-3d"><video autoplay loop muted playsinline><source src="video/model1.mp4" type="video/mp4"></video><div class="prekryv-textu"><h3>Model 1</h3></div></div>
+                <div class="video-karta-3d"><video autoplay loop muted playsinline><source src="video/model2.mp4" type="video/mp4"></video><div class="prekryv-textu"><h3>Model 2</h3></div></div>
+                <div class="video-karta-3d"><video autoplay loop muted playsinline><source src="video/model3.mp4" type="video/mp4"></video><div class="prekryv-textu"><h3>Model 3</h3></div></div>
+                <div class="video-karta-3d"><video autoplay loop muted playsinline><source src="video/model4.mp4" type="video/mp4"></video><div class="prekryv-textu"><h3>Model 4</h3></div></div>
+            </div>
+
+            <div id="grid-uiux" class="grid-kontejner grid-uiux-layout">
+                <div class="video-kontejner">
+                    <video id="hlavni-video" autoplay loop muted playsinline style="display: block;"><source src="video/Káva prezentace.mp4" type="video/mp4"></video>
+                    <div id="placeholder-box" class="placeholder-slide" style="display: none;"><i class="fa-solid fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 20px;"></i>To be...</div>
+                    <div class="prekryv-textu"><h3 id="nazev-videa">UI design</h3></div>
+                </div>
+                <div class="ovladani-video">
+                    <button class="sipka-btn" onclick="zmenVideo(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+                    <span class="video-popisek" id="video-pocitadlo">1 / 3</span>
+                    <button class="sipka-btn" onclick="zmenVideo(1)"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div id="grid-school" class="grid-kontejner grid-school-layout">
+    
+            <div class="masonry-item">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="video/had.mp4" type="video/mp4">
+                </video>
+                <div class="prekryv-textu">
+                    <h3>ANSI projekt</h3>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="video/tga.mp4" type="video/mp4">
+                </video>
+                <div class="prekryv-textu">
+                    <h3>Práce s TGA soubory</h3>
+                </div>
+            </div>
+
+            <div class="masonry-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: var(--pozadi-karty);">
+                <i class="fa-solid fa-spinner fa-spin" style="font-size: 3rem; margin-bottom: 20px; opacity: 0.5;"></i>
+                <span style="font-size: 1.2rem; font-weight: 600; opacity: 0.7;">To be...</span>
+                <div class="prekryv-textu">
+                    <h3>SDL</h3>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
