@@ -45,7 +45,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden; /* TOTO JE KLÍČOVÉ - ořízne vše, co leze ven */
+    overflow-x: hidden;
     width: 100%;
  }
 
@@ -169,7 +169,9 @@ nav a:hover, nav a.active { color: var(--barva-akcent); }
 
 
 .obal-stranky { max-width: 1600px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; min-height: 80vh; }
-
+@media screen and (max-width: 768px) {
+    .obal-stranky{padding: 0px;}
+}
 /*BLOBY*/
 .flek {
     position: absolute; background: var(--dekorace-flek);
